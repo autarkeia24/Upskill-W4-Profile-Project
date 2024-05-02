@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stylish Profile Card</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .background {
+      background-image: url('./imgs/lines.png');
+      background-repeat: repeat;
+      background-position: center;
+      background-size: cover;
+    }
+
+    .profile-card {
+      background-color: #ffffff;
+      border-radius: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      text-align: center;
+      width: 350px;
+    }
+
+    .profile-picture {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      margin: 0 auto 20px;
+      display: block;
+    }
+
+    .name {
+      font-size: 28px;
+      margin-bottom: 10px;
+      color: #333333;
+    }
+
+    .job-title {
+      font-size: 20px;
+      color: #9b0cfa;
+      margin-bottom: 10px;
+    }
+
+    .company-name {
+      font-size: 18px;
+      color: #666666;
+      margin-bottom: 10px;
+    }
+
+    .contact-info {
+      font-size: 16px;
+      color: #666666;
+      margin-bottom: 10px;
+    }
+
+    .description {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #444444;
+    }
+
+    .profile-card::before {
+      content: '';
+      position: absolute;
+      top: -10px;
+      left: 50%;
+      width: 20px;
+      height: 20px;
+      background: #ffffff;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      transform: translateX(-50%) rotate(45deg);
+      z-index: -1;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="profile-card background">
+    <img class="profile-picture" src="./imgs/DSC_2537 - Copyb.jpg" alt="Profile Picture">
+    <div class="name">Emmanuel Ekekwe</div>
+    <div class="job-title">Creative Director</div>
+    <div class="company-name">Northside Impressions</div>
+    <div class="contact-info">Email: emmanuelekekwe@gmail.com</div>
+    <div class="contact-info">Phone: +234 704-2653-108</div>
+    <p class="description">Experienced in leading development teams and driving innovation, our Senior Software
+      Developer brings expertise in full-stack development, technical architecture, and problem-solving.</p>
+  </div>
+
+</body>
+
+</html>
